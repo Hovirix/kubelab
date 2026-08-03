@@ -1,18 +1,18 @@
-<div align="center">
-  <a href="https://lab.hovirix.dev">
-    <img src="docs/public/logo.png" width="200px" height="200px" />
-  </a>
+# Kubelab
 
-  <h1>HX Lab </h1>
+Archived Talos, Kubernetes, and FluxCD implementation for the HX Lab homelab.
 
-  <p>
-    The Self-Hosted DevSecOps Platform.
-  </p>
-  
-  <p>
-    <a href="https://lab.hovirix.dev">Docs</a> &bullet;
-    <a href="https://lab.hovirix.dev/architecture/introduction">Architecture</a> &bullet;
-    <a href="https://lab.hovirix.dev/platform/overview">Platform</a> &bullet;
-    <a href="https://lab.hovirix.dev/operations/overview">Operations</a>
-  </p>
-</div>
+This repository preserves the previous Kubernetes-based architecture, including:
+
+- Proxmox virtual machines managed with OpenTofu
+- Talos Linux cluster lifecycle management
+- FluxCD GitOps
+- Cilium networking
+- Traefik
+- cert-manager
+- CloudNativePG and PostgreSQL resources
+- Prometheus, Grafana, Loki, and Alloy
+
+The implementation is retained for reference and is no longer the active homelab platform.
+
+The active infrastructure is maintained in the `homelab` repository.
