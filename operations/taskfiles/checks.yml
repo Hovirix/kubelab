@@ -7,8 +7,6 @@ tasks:
       - task: flake
       - task: shellcheck
       - task: secrets
-      - task: ansible-lint
-      - task: ansible-syntax
       - task: tflint
 
   fmt:
@@ -31,20 +29,8 @@ tasks:
     cmds:
       - find operations/scripts -type f -exec shellcheck {} +
 
-  ansible-lint:
-    desc: Lint Ansible content
-    dir: infrastructure/ansible
-    cmds:
-      - ansible-lint
-
-  ansible-syntax:
-    desc: Run Ansible playbook syntax checks
-    dir: infrastructure/ansible
-    cmds:
-      - for playbook in playbooks/*.yml; do ansible-playbook "$playbook" --syntax-check; done
-
   tflint:
     desc: Lint OpenTofu stacks
     dir: infrastructure/opentofu/stacks
     cmds:
-      - for stack in adguardhome authentik cloudflare clusters/*; do [ ! -d "$stack" ] || tflint --chdir="$stack"; done
+      - for stack in clusters/*; do [ ! -d "$stack" ] || tflint --chdir="$stack"; done

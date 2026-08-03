@@ -1,10 +1,6 @@
 version: "3"
 
 includes:
-  ansible:
-    dir: ./infrastructure/ansible
-    taskfile: operations/taskfiles/ansible.yml
-
   cluster:
     taskfile: operations/taskfiles/cluster.yml
 

@@ -10,8 +10,6 @@
       trivy
 
       # Security validation
-      ansible
-      ansible-lint
       kubeconform
       kustomize
       shellcheck
@@ -30,8 +28,6 @@
       pnpm
 
       # Infrastructure
-      ansible
-      ansible-lint
       opentofu
       shellcheck
       tflint

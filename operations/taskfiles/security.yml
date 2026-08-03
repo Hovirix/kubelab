@@ -22,7 +22,6 @@ tasks:
       - trivy sbom --scanners vuln "{{.SBOM_DIR}}/infrastructure.cdx.json"
       - trivy sbom --scanners vuln "{{.SBOM_DIR}}/operations.cdx.json"
       - trivy sbom --scanners vuln "{{.SBOM_DIR}}/platform.cdx.json"
-      - trivy sbom --scanners vuln "{{.SBOM_DIR}}/docs.cdx.json"
 
   iac:
     desc: Scan infrastructure and platform configuration
@@ -42,7 +41,6 @@ tasks:
       - syft dir:infrastructure -o cyclonedx-json="{{.SBOM_DIR}}/infrastructure.cdx.json"
       - syft dir:operations -o cyclonedx-json="{{.SBOM_DIR}}/operations.cdx.json"
       - syft dir:platform -o cyclonedx-json="{{.SBOM_DIR}}/platform.cdx.json"
-      - syft dir:docs -o cyclonedx-json="{{.SBOM_DIR}}/docs.cdx.json"
 
   all:
     desc: Run all local security checks
