@@ -16,9 +16,9 @@ or live reconciliation.
 Requirements:
 
 1. Read the existing repository instructions and inspect the working tree.
-2. Use Explore for focused repository discovery when useful.
-3. Delegate focused upstream research to Scout whenever implementation depends
-   on external, current, deprecated, or version-specific behavior.
+2. Use the built-in `explore` agent for focused repository discovery when useful.
+3. Perform focused upstream research whenever implementation depends on
+   external, current, deprecated, or version-specific behavior.
 4. Follow the repository's existing agent-routing and domain-ownership rules.
 5. Establish observable completion conditions and a concise implementation plan.
 6. Implement the smallest coherent Git-managed change.

@@ -55,7 +55,6 @@ Review and reason about:
 
 - Proxmox users, roles, ACLs, and API tokens.
 - OpenTofu providers, variables, plans, state handling, and secrets.
-- Ansible users, permissions, firewall rules, services, and privileged tasks.
 - Talos and node lifecycle access.
 - Kubernetes RBAC, service accounts, namespaces, ingress, network policies, workloads, and secrets.
 - Cloudflare DNS, tunnels, access policies, and exposed services.

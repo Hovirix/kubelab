@@ -121,7 +121,7 @@ Repository evidence should answer questions such as:
 
 Do not invent a new repository convention until existing patterns have been checked.
 
-Use a repository exploration agent when available and when broad or parallel inspection would materially improve discovery.
+Use the built-in `explore` agent when broad or parallel inspection would materially improve discovery.
 
 # Phase 2: Define the acceptance contract
 
@@ -232,7 +232,7 @@ Research is required for current or version-specific behavior such as:
 
 Do not research facts already established by the repository unless they appear stale or contradictory.
 
-When using a research agent, provide:
+When performing focused upstream research, establish:
 
 - component name;
 - repository version, chart version, or application version;

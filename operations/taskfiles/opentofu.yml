@@ -17,6 +17,14 @@ tasks:
           stack: clusters/prod-k8s
           CLI_ARGS: plan
 
+  cluster:init:
+    desc: Initialize the Kubernetes cluster OpenTofu stack
+    cmds:
+      - task: tofu
+        vars:
+          stack: clusters/prod-k8s
+          CLI_ARGS: init
+
   cluster:apply:
     desc: Apply the Kubernetes cluster stack
     cmds:

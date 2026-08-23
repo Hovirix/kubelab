@@ -20,8 +20,8 @@ Requirements:
    - the current branch and complete working-tree diff.
 
 2. Inspect relevant surrounding files and compare the implementation with the repository's existing patterns.
-3. Use Explore when broader repository inspection would improve the review.
-4. Use Scout only when correctness depends on external, current, deprecated, or version-specific upstream behavior that was not already verified.
+3. Use the built-in `explore` agent when broader repository inspection would improve the review.
+4. Perform focused upstream research only when correctness depends on external, current, deprecated, or version-specific behavior that was not already verified.
 5. Review:
    - functional correctness;
    - repository and domain consistency;
@@ -86,7 +86,7 @@ List every command executed and its result.
 
 ### Upstream verification
 
-State whether Scout was used and summarize any version-specific conclusions.
+State whether upstream research was used and summarize any version-specific conclusions.
 
 ### Security review
 

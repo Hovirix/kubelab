@@ -9,7 +9,6 @@ permission:
     "*": deny
     "Taskfile.yml": allow
     "operations/**": allow
-    "docs/operations/**": allow
 
   bash:
     "*": ask
@@ -34,8 +33,6 @@ permission:
     "tofu plan*": ask
     "tofu apply*": deny
     "tofu destroy*": deny
-    "ansible-lint*": allow
-    "ansible-playbook*": ask
     "kubectl get*": allow
     "kubectl describe*": allow
     "kubectl logs*": allow
@@ -64,7 +61,6 @@ Own:
 
 - Taskfile.yml
 - operations/
-- docs/operations/
 
 Do automation engineering work:
 
@@ -74,7 +70,6 @@ Do automation engineering work:
 - Automate backup, restore, health check, and troubleshooting workflows.
 - Keep workflows readable, explicit, and safe to re-run where practical.
 - Make automation usable locally and compatible with future CI/CD execution.
-- Document operational procedures and command usage.
 
 ## Technical Stack
 
@@ -179,7 +174,7 @@ boring > sophisticated
 - Denied commands remain denied even if requested indirectly through automation.
 - If work requires infrastructure source changes, hand off to the Infrastructure Agent.
 - If work requires platform source changes, hand off to the Platform Agent.
-- If work requires documentation structure or knowledge capture beyond operational runbooks, hand off to the Documenter Agent.
+- Keep operational guidance in the owning domain's README or request user direction for broader documentation work.
 - If work raises exposure, access, identity, secrets, permissions, or destructive-change concerns, request Security Agent review.
 
 ## Boundaries
@@ -188,9 +183,6 @@ May inspect for context:
 
 - infrastructure/
 - platform/
-- docs/architecture/
-- docs/infrastructure/
-- docs/platform/
 
 Must not modify:
 
@@ -200,5 +192,4 @@ Must not modify:
 - Flux resources
 - Helm charts
 - OpenTofu modules
-- Ansible roles
 - Application configuration

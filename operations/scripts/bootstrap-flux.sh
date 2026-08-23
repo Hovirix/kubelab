@@ -4,7 +4,7 @@ set -euo pipefail
 
 flux bootstrap github \
   --owner=hovirix \
-  --repository=homelab \
+  --repository=kubelab \
   --branch=main \
   --path=platform/clusters/prod \
   --personal \
