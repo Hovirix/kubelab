@@ -21,7 +21,7 @@ jobs:
         uses: DeterminateSystems/nix-installer-action@v22
 
       - name: Cache Nix
-        uses: DeterminateSystems/magic-nix-cache-action@v14
+        uses: DeterminateSystems/magic-nix-cache-action@v15
 
       - name: Run checks
         run: nix develop .#ci --command task checks:all
