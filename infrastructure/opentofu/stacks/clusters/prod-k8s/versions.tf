@@ -14,7 +14,7 @@ terraform {
 
     proxmox = {
       source  = "bpg/proxmox"
-      version = "0.111.1"
+      version = "0.116.0"
     }
 
     sops = {
